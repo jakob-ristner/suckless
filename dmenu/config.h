@@ -6,7 +6,7 @@ static int topbar = 1;                      /* -b  option; if 0, dmenu appears a
 static const char *fonts[] = {
 	"Jetbrains Mono:size=18"
 };
-static const unsigned int bgalpha = 0.75;
+static const unsigned int bgalpha = 0x7f;
 static const unsigned int fgalpha = OPAQUE;
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
 static const char *colors[SchemeLast][2] = {
@@ -18,7 +18,7 @@ static const char *colors[SchemeLast][2] = {
 static const unsigned int alphas[SchemeLast][2] = {
 	/*		fgalpha		bgalphga	*/
 	[SchemeNorm] = { fgalpha, bgalpha },
-	[SchemeSel] = { fgalpha, bgalpha },
+	[SchemeSel] = { fgalpha, fgalpha },
 	[SchemeOut] = { fgalpha, bgalpha },
 };
 
